@@ -1,0 +1,6 @@
+!.gitignore
+wificai-src-pcare/bin/*
+wificai-src-pcare/gen/*
+wificai-src-pcare/out/*
+wificai-src-pcare/.idea/*
+*.iml
