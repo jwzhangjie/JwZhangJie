@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.jwzhangjie.videoplayer.JieVideo"
+            android:name="com.jwzhangjie.videoplayer.Main"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,12 +23,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity 
+            android:name="com.jwzhangjie.videoplayer.JieVideo"
+            android:label="@string/app_name"
+            ></activity>
          <activity
             android:name="com.jwzhangjie.videoplayer.JieVideoPlayer"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:label="@string/app_name" >
         </activity>
+        <activity 
+            android:name="com.jwzhangjie.videoplayer.online.WebVideo"
+		></activity>
         <activity
             android:name="io.vov.vitamio.activity.InitActivity"
             android:configChanges="orientation|keyboardHidden|navigation"

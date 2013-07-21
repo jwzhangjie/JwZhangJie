@@ -1,6 +1,5 @@
 package com.jwzhangjie.videoplayer;
 
-
 import io.vov.vitamio.LibsChecker;
 
 import java.util.List;
