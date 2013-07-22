@@ -26,6 +26,27 @@ public final class R {
         public static final int shrink_from_topright_to_bottomleft=0x7f04000e;
     }
     public static final class attr {
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>ARGB_8888</code></td><td>0</td><td></td></tr>
+<tr><td><code>ARGB_4444</code></td><td>1</td><td></td></tr>
+<tr><td><code>RGB_565</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int animationBitmapFormat=0x7f01000b;
+        /**  Defines panel animation duration in ms. 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int animationDuration=0x7f01000c;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -43,6 +64,18 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int circleColor=0x7f010003;
+        /**  Defines closed handle (drawable/color). 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int closedHandle=0x7f010013;
+        /**  Identifier for the child that represents the panel's content. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int content=0x7f01000f;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -56,6 +89,11 @@ containing a value of this type.
 </table>
          */
         public static final int firstChildPosition=0x7f010006;
+        /**  Identifier for the child that represents the panel's handle. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int handle=0x7f01000e;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -64,6 +102,15 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int isRotating=0x7f010008;
+        /**  Defines if flying gesture forces linear interpolator in animation. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int linearFlying=0x7f010010;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -80,6 +127,24 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int name=0x7f010009;
+        /**  Defines opened handle (drawable/color). 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int openedHandle=0x7f010012;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>vertical</code></td><td>0</td><td></td></tr>
+<tr><td><code>horizontal</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int orientation=0x7f01000a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -88,6 +153,20 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int pinned=0x7f010000;
+        /**  Defines panel position on the screen. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0</td><td> Panel placed at top of the screen. </td></tr>
+<tr><td><code>bottom</code></td><td>1</td><td> Panel placed at bottom of the screen. </td></tr>
+<tr><td><code>left</code></td><td>2</td><td> Panel placed at left of the screen. </td></tr>
+<tr><td><code>right</code></td><td>3</td><td> Panel placed at right of the screen. </td></tr>
+</table>
+         */
+        public static final int position=0x7f01000d;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -113,6 +192,17 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int rotateToCenter=0x7f010007;
+        /**  Defines size relative to parent (must be in form: nn%p). 
+         <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int weight=0x7f010011;
     }
     public static final class color {
         public static final int background=0x7f060010;
@@ -206,75 +296,110 @@ containing a value of this type.
         public static final int quickaction_arrow_up=0x7f020038;
         public static final int quickaction_item_btn=0x7f020039;
         public static final int quickaction_popup=0x7f02003a;
-        public static final int scrubber_control_disabled_holo=0x7f02003b;
-        public static final int scrubber_control_focused_holo=0x7f02003c;
-        public static final int scrubber_control_normal_holo=0x7f02003d;
-        public static final int scrubber_control_pressed_holo=0x7f02003e;
-        public static final int scrubber_control_selector_holo=0x7f02003f;
-        public static final int scrubber_primary_holo=0x7f020040;
-        public static final int scrubber_progress_horizontal_holo_dark=0x7f020041;
-        public static final int scrubber_secondary_holo=0x7f020042;
-        public static final int scrubber_track_holo_dark=0x7f020043;
-        public static final int spinner_background_holo_dark=0x7f020044;
-        public static final int spinner_default_holo_dark=0x7f020045;
-        public static final int spinner_disabled_holo_dark=0x7f020046;
-        public static final int spinner_focused_holo_dark=0x7f020047;
-        public static final int spinner_pressed_holo_dark=0x7f020048;
-        public static final int toast_frame=0x7f020049;
-        public static final int video_brightness_bg=0x7f02004a;
-        public static final int video_num_bg=0x7f02004b;
-        public static final int video_num_front=0x7f02004c;
-        public static final int video_volumn_bg=0x7f02004d;
-        public static final int zhangjie=0x7f02004e;
+        public static final int roller=0x7f02003b;
+        public static final int scrubber_control_disabled_holo=0x7f02003c;
+        public static final int scrubber_control_focused_holo=0x7f02003d;
+        public static final int scrubber_control_normal_holo=0x7f02003e;
+        public static final int scrubber_control_pressed_holo=0x7f02003f;
+        public static final int scrubber_control_selector_holo=0x7f020040;
+        public static final int scrubber_primary_holo=0x7f020041;
+        public static final int scrubber_progress_horizontal_holo_dark=0x7f020042;
+        public static final int scrubber_secondary_holo=0x7f020043;
+        public static final int scrubber_track_holo_dark=0x7f020044;
+        public static final int spinner_background_holo_dark=0x7f020045;
+        public static final int spinner_default_holo_dark=0x7f020046;
+        public static final int spinner_disabled_holo_dark=0x7f020047;
+        public static final int spinner_focused_holo_dark=0x7f020048;
+        public static final int spinner_pressed_holo_dark=0x7f020049;
+        public static final int toast_frame=0x7f02004a;
+        public static final int video_320=0x7f02004b;
+        public static final int video_brightness_bg=0x7f02004c;
+        public static final int video_num_bg=0x7f02004d;
+        public static final int video_num_front=0x7f02004e;
+        public static final int video_play_button=0x7f02004f;
+        public static final int video_volumn_bg=0x7f020050;
+        public static final int zhangjie=0x7f020051;
     }
     public static final class id {
+        public static final int ARGB_4444=0x7f0a0007;
+        public static final int ARGB_8888=0x7f0a0006;
         public static final int East=0x7f0a0000;
         public static final int North=0x7f0a0003;
+        public static final int RGB_565=0x7f0a0008;
         public static final int South=0x7f0a0001;
         public static final int West=0x7f0a0002;
-        public static final int action_settings=0x7f0a002e;
-        public static final int alphabet_scroller=0x7f0a0016;
-        public static final int arrow_down=0x7f0a001f;
-        public static final int arrow_up=0x7f0a001e;
-        public static final int btn_cancel=0x7f0a000d;
-        public static final int btn_ok=0x7f0a000e;
-        public static final int color_picker_view=0x7f0a000c;
-        public static final int discard=0x7f0a0011;
-        public static final int first_letter_overlay=0x7f0a0015;
-        public static final int image=0x7f0a000f;
-        public static final int iv_icon=0x7f0a0020;
-        public static final int jievideolistfile=0x7f0a0014;
-        public static final int line=0x7f0a0023;
-        public static final int main_circle_layout=0x7f0a0004;
-        public static final int main_facebook_image=0x7f0a0006;
-        public static final int main_google_image=0x7f0a0008;
-        public static final int main_linkedin_image=0x7f0a0009;
-        public static final int main_myspace_image=0x7f0a0007;
-        public static final int main_selected_textView=0x7f0a0005;
-        public static final int main_twitter_image=0x7f0a000a;
-        public static final int main_wordpress_image=0x7f0a000b;
-        public static final int mediacontroller_file_name=0x7f0a001b;
-        public static final int mediacontroller_play_pause=0x7f0a0017;
-        public static final int mediacontroller_seekbar=0x7f0a001a;
-        public static final int mediacontroller_time_current=0x7f0a0018;
-        public static final int mediacontroller_time_total=0x7f0a0019;
-        public static final int operation_bg=0x7f0a002a;
-        public static final int operation_full=0x7f0a002b;
-        public static final int operation_percent=0x7f0a002c;
-        public static final int operation_volume_brightness=0x7f0a0029;
-        public static final int rotateLeft=0x7f0a0012;
-        public static final int rotateRight=0x7f0a0013;
-        public static final int save=0x7f0a0010;
-        public static final int scroller=0x7f0a001c;
-        public static final int surface_view=0x7f0a0027;
-        public static final int title_icon=0x7f0a0022;
-        public static final int tracks=0x7f0a001d;
-        public static final int tv_title=0x7f0a0021;
-        public static final int video_img=0x7f0a0024;
-        public static final int video_loading=0x7f0a0028;
-        public static final int video_time=0x7f0a0026;
-        public static final int video_title=0x7f0a0025;
-        public static final int webvideo_webview=0x7f0a002d;
+        public static final int action_settings=0x7f0a004e;
+        public static final int alphabet_scroller=0x7f0a001f;
+        public static final int arrow_down=0x7f0a0031;
+        public static final int arrow_up=0x7f0a0030;
+        public static final int bottom=0x7f0a000a;
+        public static final int btn_cancel=0x7f0a0016;
+        public static final int btn_ok=0x7f0a0017;
+        public static final int cancelButton=0x7f0a0037;
+        public static final int color_picker_view=0x7f0a0015;
+        public static final int content=0x7f0a0034;
+        public static final int cursor=0x7f0a003c;
+        public static final int delete_button=0x7f0a0029;
+        public static final int discard=0x7f0a001a;
+        public static final int first_letter_overlay=0x7f0a001e;
+        public static final int head=0x7f0a002c;
+        public static final int horizontal=0x7f0a0005;
+        public static final int image=0x7f0a0018;
+        public static final int imageView_video_play=0x7f0a0043;
+        public static final int imageView_video_view=0x7f0a0045;
+        public static final int imageView_view=0x7f0a002b;
+        public static final int iv_icon=0x7f0a0032;
+        public static final int jievideolistfile=0x7f0a001d;
+        public static final int layout=0x7f0a0025;
+        public static final int left=0x7f0a000b;
+        public static final int line=0x7f0a003f;
+        public static final int linearLayout1=0x7f0a0039;
+        public static final int main_circle_layout=0x7f0a000d;
+        public static final int main_facebook_image=0x7f0a000f;
+        public static final int main_google_image=0x7f0a0011;
+        public static final int main_linkedin_image=0x7f0a0012;
+        public static final int main_myspace_image=0x7f0a0010;
+        public static final int main_selected_textView=0x7f0a000e;
+        public static final int main_twitter_image=0x7f0a0013;
+        public static final int main_wordpress_image=0x7f0a0014;
+        public static final int mediacontroller_file_name=0x7f0a0024;
+        public static final int mediacontroller_play_pause=0x7f0a0020;
+        public static final int mediacontroller_seekbar=0x7f0a0023;
+        public static final int mediacontroller_time_current=0x7f0a0021;
+        public static final int mediacontroller_time_total=0x7f0a0022;
+        public static final int message=0x7f0a0035;
+        public static final int myGallery=0x7f0a0026;
+        public static final int operation_bg=0x7f0a004a;
+        public static final int operation_full=0x7f0a004b;
+        public static final int operation_percent=0x7f0a004c;
+        public static final int operation_volume_brightness=0x7f0a0049;
+        public static final int photoGallery=0x7f0a002d;
+        public static final int photo_counts=0x7f0a0028;
+        public static final int phototext=0x7f0a003a;
+        public static final int positiveButton=0x7f0a0036;
+        public static final int right=0x7f0a000c;
+        public static final int rotateLeft=0x7f0a001b;
+        public static final int rotateRight=0x7f0a001c;
+        public static final int save=0x7f0a0019;
+        public static final int scroller=0x7f0a002e;
+        public static final int shareImageItem=0x7f0a0038;
+        public static final int share_button=0x7f0a002a;
+        public static final int surface_view=0x7f0a0047;
+        public static final int titleLayout=0x7f0a0027;
+        public static final int title_icon=0x7f0a003e;
+        public static final int top=0x7f0a0009;
+        public static final int tracks=0x7f0a002f;
+        public static final int tv_title=0x7f0a0033;
+        public static final int vertical=0x7f0a0004;
+        public static final int videoGallery=0x7f0a0046;
+        public static final int video_img=0x7f0a0040;
+        public static final int video_loading=0x7f0a0048;
+        public static final int video_play_button=0x7f0a0044;
+        public static final int video_time=0x7f0a0042;
+        public static final int video_title=0x7f0a0041;
+        public static final int videotext=0x7f0a003b;
+        public static final int viewpage=0x7f0a003d;
+        public static final int webvideo_webview=0x7f0a004d;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -283,12 +408,22 @@ containing a value of this type.
         public static final int cropimage=0x7f030003;
         public static final int jie_video=0x7f030004;
         public static final int mediacontroller=0x7f030005;
-        public static final int quickaction=0x7f030006;
-        public static final int quickaction_item=0x7f030007;
-        public static final int title=0x7f030008;
-        public static final int video_list_view=0x7f030009;
-        public static final int videoview=0x7f03000a;
-        public static final int webvideo=0x7f03000b;
+        public static final int my_gallery=0x7f030006;
+        public static final int photo_count=0x7f030007;
+        public static final int photo_view=0x7f030008;
+        public static final int photoimage=0x7f030009;
+        public static final int quickaction=0x7f03000a;
+        public static final int quickaction_item=0x7f03000b;
+        public static final int share_dialog=0x7f03000c;
+        public static final int share_list_item=0x7f03000d;
+        public static final int share_main=0x7f03000e;
+        public static final int title=0x7f03000f;
+        public static final int video_list_view=0x7f030010;
+        public static final int video_play_item=0x7f030011;
+        public static final int video_view_item=0x7f030012;
+        public static final int videoimage=0x7f030013;
+        public static final int videoview=0x7f030014;
+        public static final int webvideo=0x7f030015;
     }
     public static final class menu {
         public static final int jie_video=0x7f0b0000;
@@ -325,6 +460,7 @@ containing a value of this type.
         public static final int file_rename_failed=0x7f080029;
         public static final int google=0x7f080031;
         public static final int imageviewconscrip=0x7f080023;
+        public static final int last_update=0x7f08004a;
         public static final int linkedin=0x7f080032;
         public static final int local_video=0x7f08002f;
         public static final int mediacontroller_play_pause=0x7f08001a;
@@ -335,6 +471,27 @@ containing a value of this type.
         public static final int permission_receive_messages_label=0x7f080012;
         public static final int permission_write_providers_description=0x7f080015;
         public static final int permission_write_providers_label=0x7f080014;
+        public static final int refresh_release=0x7f080049;
+        public static final int share_btn_click_ok=0x7f080036;
+        public static final int share_delete=0x7f08003d;
+        public static final int share_delete_cancle=0x7f080041;
+        public static final int share_delete_photo=0x7f08003f;
+        public static final int share_delete_query=0x7f080040;
+        public static final int share_delete_video=0x7f080042;
+        public static final int share_file_delete_restart=0x7f08004b;
+        public static final int share_file_deleted=0x7f080038;
+        public static final int share_inmain_infor=0x7f080037;
+        public static final int share_net_error_content=0x7f080044;
+        public static final int share_net_error_done=0x7f080045;
+        public static final int share_net_error_title=0x7f080043;
+        public static final int share_photos=0x7f08003b;
+        public static final int share_picfile_more=0x7f080039;
+        public static final int share_prev_delete=0x7f080046;
+        public static final int share_prev_local=0x7f080048;
+        public static final int share_prev_share=0x7f080047;
+        public static final int share_share=0x7f08003e;
+        public static final int share_videofile_more=0x7f08003a;
+        public static final int share_videos=0x7f08003c;
         public static final int start_app=0x7f080035;
         public static final int time=0x7f080022;
         public static final int title=0x7f080021;
@@ -389,11 +546,12 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f090016;
+        public static final int AppBaseTheme=0x7f090017;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f090017;
+        public static final int AppTheme=0x7f090018;
+        public static final int DeleteDialog=0x7f090016;
         public static final int MediaController_SeekBar=0x7f090014;
         public static final int MediaController_Text=0x7f090015;
         /**   <item name="android:background">?android:selectableItemBackground</item>
@@ -516,6 +674,207 @@ containing a value of this type.
           @attr name android:name
         */
         public static final int CircleImageView_name = 0;
+        /** Attributes that can be used with a FlipViewController.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FlipViewController_animationBitmapFormat com.jwzhangjie.videoplayer:animationBitmapFormat}</code></td><td></td></tr>
+           <tr><td><code>{@link #FlipViewController_orientation com.jwzhangjie.videoplayer:orientation}</code></td><td></td></tr>
+           </table>
+           @see #FlipViewController_animationBitmapFormat
+           @see #FlipViewController_orientation
+         */
+        public static final int[] FlipViewController = {
+            0x7f01000a, 0x7f01000b
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.jwzhangjie.videoplayer.R.attr#animationBitmapFormat}
+          attribute's value can be found in the {@link #FlipViewController} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>ARGB_8888</code></td><td>0</td><td></td></tr>
+<tr><td><code>ARGB_4444</code></td><td>1</td><td></td></tr>
+<tr><td><code>RGB_565</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name android:animationBitmapFormat
+        */
+        public static final int FlipViewController_animationBitmapFormat = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.jwzhangjie.videoplayer.R.attr#orientation}
+          attribute's value can be found in the {@link #FlipViewController} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>vertical</code></td><td>0</td><td></td></tr>
+<tr><td><code>horizontal</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android:orientation
+        */
+        public static final int FlipViewController_orientation = 0;
+        /** Attributes that can be used with a Panel.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Panel_animationDuration com.jwzhangjie.videoplayer:animationDuration}</code></td><td> Defines panel animation duration in ms.</td></tr>
+           <tr><td><code>{@link #Panel_closedHandle com.jwzhangjie.videoplayer:closedHandle}</code></td><td> Defines closed handle (drawable/color).</td></tr>
+           <tr><td><code>{@link #Panel_content com.jwzhangjie.videoplayer:content}</code></td><td> Identifier for the child that represents the panel's content.</td></tr>
+           <tr><td><code>{@link #Panel_handle com.jwzhangjie.videoplayer:handle}</code></td><td> Identifier for the child that represents the panel's handle.</td></tr>
+           <tr><td><code>{@link #Panel_linearFlying com.jwzhangjie.videoplayer:linearFlying}</code></td><td> Defines if flying gesture forces linear interpolator in animation.</td></tr>
+           <tr><td><code>{@link #Panel_openedHandle com.jwzhangjie.videoplayer:openedHandle}</code></td><td> Defines opened handle (drawable/color).</td></tr>
+           <tr><td><code>{@link #Panel_position com.jwzhangjie.videoplayer:position}</code></td><td> Defines panel position on the screen.</td></tr>
+           <tr><td><code>{@link #Panel_weight com.jwzhangjie.videoplayer:weight}</code></td><td> Defines size relative to parent (must be in form: nn%p).</td></tr>
+           </table>
+           @see #Panel_animationDuration
+           @see #Panel_closedHandle
+           @see #Panel_content
+           @see #Panel_handle
+           @see #Panel_linearFlying
+           @see #Panel_openedHandle
+           @see #Panel_position
+           @see #Panel_weight
+         */
+        public static final int[] Panel = {
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
+            0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013
+        };
+        /**
+          <p>
+          @attr description
+           Defines panel animation duration in ms. 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:animationDuration
+        */
+        public static final int Panel_animationDuration = 0;
+        /**
+          <p>
+          @attr description
+           Defines closed handle (drawable/color). 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:closedHandle
+        */
+        public static final int Panel_closedHandle = 7;
+        /**
+          <p>
+          @attr description
+           Identifier for the child that represents the panel's content. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:content
+        */
+        public static final int Panel_content = 3;
+        /**
+          <p>
+          @attr description
+           Identifier for the child that represents the panel's handle. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:handle
+        */
+        public static final int Panel_handle = 2;
+        /**
+          <p>
+          @attr description
+           Defines if flying gesture forces linear interpolator in animation. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:linearFlying
+        */
+        public static final int Panel_linearFlying = 4;
+        /**
+          <p>
+          @attr description
+           Defines opened handle (drawable/color). 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:openedHandle
+        */
+        public static final int Panel_openedHandle = 6;
+        /**
+          <p>
+          @attr description
+           Defines panel position on the screen. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0</td><td> Panel placed at top of the screen. </td></tr>
+<tr><td><code>bottom</code></td><td>1</td><td> Panel placed at bottom of the screen. </td></tr>
+<tr><td><code>left</code></td><td>2</td><td> Panel placed at left of the screen. </td></tr>
+<tr><td><code>right</code></td><td>3</td><td> Panel placed at right of the screen. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:position
+        */
+        public static final int Panel_position = 1;
+        /**
+          <p>
+          @attr description
+           Defines size relative to parent (must be in form: nn%p). 
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:weight
+        */
+        public static final int Panel_weight = 5;
         /** Attributes that can be used with a PinProgressButton.
            <p>Includes the following attributes:</p>
            <table>

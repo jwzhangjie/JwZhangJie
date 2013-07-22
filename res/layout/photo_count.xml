@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <RelativeLayout
+  	   xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/titleLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"  >
+         <TextView 
+             android:id="@+id/photo_counts"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:textSize="15dp"
+             android:textColor="#004144"
+             android:text=" X of X "
+             android:textStyle="bold"/>
+
+         <Button
+             android:id="@+id/delete_button"
+             android:layout_width="80dp"
+             android:layout_height="42dp"
+             android:layout_marginRight="10dp"
+             android:layout_toLeftOf="@+id/share_button"
+              android:gravity="center_vertical|center_horizontal"
+             android:text="@string/share_delete" />
+          <Button 
+             android:id="@+id/share_button"
+             android:layout_width="80dp"
+             android:layout_height="42dp"
+             android:text="@string/share_share"
+             android:layout_marginRight="8dp"
+             android:layout_alignParentRight="true"
+             android:gravity="center_vertical|center_horizontal" />
+        
+</RelativeLayout>

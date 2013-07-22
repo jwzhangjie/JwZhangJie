@@ -36,4 +36,27 @@
     <string name="wordpress">Wordpress</string>
     <string name="myspace">Myspace</string>
     <string name="start_app">Starting application:</string>
+    
+      <string name="share_btn_click_ok">OK</string>
+    <string name="share_inmain_infor">To share Rover 3.0 photos and videos, exit the app, go to Settings and access a Wi-Fi network other than Rover 3.0.  Open the Rover 3.0 app and select Share.</string>
+    <string name="share_file_deleted">Your file has been deleted, restart the software to update</string>
+    <string name="share_picfile_more">Picture number more than 200, showing only the first 200 thumbnail</string>
+    <string name="share_videofile_more">Video number more than 100, will only display the first 100 thumbnail</string>
+    <string name="share_photos">Photos</string>
+    <string name="share_videos">Videos</string>
+    <string name="share_delete">Delete</string>
+    <string name="share_share">Share</string>
+    <string name="share_delete_photo">DELETE PHOTO</string>
+    <string name="share_delete_query">OK</string>
+    <string name="share_delete_cancle">CANCEL</string>
+    <string name="share_delete_video">DELETE VIDEO</string>
+    <string name="share_net_error_title">Connection Error</string>
+    <string name="share_net_error_content">Please check your Wi-Fi connection.</string>
+    <string name="share_net_error_done">Done</string>
+    <string name="share_prev_delete">Delete</string>
+    <string name="share_prev_share">Share</string>
+    <string name="share_prev_local">X of X</string>
+    <string name="refresh_release">Pull to refresh</string>
+    <string name="last_update">Last updated</string>
+    <string name="share_file_delete_restart">Your file has been deleted, restart the software to update</string>
 </resources>

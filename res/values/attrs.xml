@@ -30,4 +30,45 @@
     <declare-styleable name="CircleImageView">
         <attr name="name" format="string" />
     </declare-styleable>
+    
+    <declare-styleable name="FlipViewController">
+		<attr name="orientation" format="enum">
+			<enum name="vertical" value="0"/>
+			<enum name="horizontal" value="1"/>
+		</attr>
+
+		<attr name="animationBitmapFormat" format="enum">
+			<enum name="ARGB_8888" value="0"/>
+			<enum name="ARGB_4444" value="1"/>
+			<enum name="RGB_565" value="2"/>
+		</attr>
+	</declare-styleable>
+
+	<declare-styleable name="Panel">
+        <!-- Defines panel animation duration in ms. -->
+        <attr name="animationDuration" format="integer" />
+        <!-- Defines panel position on the screen. -->
+        <attr name="position">
+        	<!-- Panel placed at top of the screen. -->
+            <enum name="top" value="0" />
+            <!-- Panel placed at bottom of the screen. -->
+            <enum name="bottom" value="1" />
+            <!-- Panel placed at left of the screen. -->
+            <enum name="left" value="2" />
+            <!-- Panel placed at right of the screen. -->
+            <enum name="right" value="3" />
+        </attr>
+        <!-- Identifier for the child that represents the panel's handle. -->
+        <attr name="handle" format="reference" />
+        <!-- Identifier for the child that represents the panel's content. -->
+        <attr name="content" format="reference" />
+        <!-- Defines if flying gesture forces linear interpolator in animation. -->
+        <attr name="linearFlying" format="boolean" />
+        <!-- Defines size relative to parent (must be in form: nn%p). -->
+        <attr name="weight" format="fraction" />
+        <!-- Defines opened handle (drawable/color). -->
+        <attr name="openedHandle" format="reference|color" />
+        <!-- Defines closed handle (drawable/color). -->
+        <attr name="closedHandle" format="reference|color" />
+    </declare-styleable>
 </resources>
