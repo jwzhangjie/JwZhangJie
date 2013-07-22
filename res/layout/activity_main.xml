@@ -7,7 +7,7 @@
     android:background="@drawable/background"
     >
 
-    <com.szugyi.circlemenu.view.CircleLayout
+    <com.jwzhangjie.videoplayer.circlemenu.view.CircleLayout
         android:id="@+id/main_circle_layout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -18,48 +18,48 @@
         circle:isRotating="true" >       
 
 
-        <com.szugyi.circlemenu.view.CircleImageView
+        <com.jwzhangjie.videoplayer.circlemenu.view.CircleImageView
             android:id="@+id/main_facebook_image"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@drawable/local_video"
             circle:name="@string/local_video" />
 
-        <com.szugyi.circlemenu.view.CircleImageView
+        <com.jwzhangjie.videoplayer.circlemenu.view.CircleImageView
             android:id="@+id/main_myspace_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon_myspace"
             circle:name="@string/myspace" />
 
-        <com.szugyi.circlemenu.view.CircleImageView
+        <com.jwzhangjie.videoplayer.circlemenu.view.CircleImageView
             android:id="@+id/main_google_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon_google"
             circle:name="@string/google" />
 
-        <com.szugyi.circlemenu.view.CircleImageView
+        <com.jwzhangjie.videoplayer.circlemenu.view.CircleImageView
             android:id="@+id/main_linkedin_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon_linkedin"
             circle:name="@string/linkedin" />
 
-        <com.szugyi.circlemenu.view.CircleImageView
+        <com.jwzhangjie.videoplayer.circlemenu.view.CircleImageView
             android:id="@+id/main_twitter_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon_twitter"
             circle:name="@string/twitter" />
 
-        <com.szugyi.circlemenu.view.CircleImageView
+        <com.jwzhangjie.videoplayer.circlemenu.view.CircleImageView
             android:id="@+id/main_wordpress_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon_wordpress"
             circle:name="@string/wordpress" />
-    </com.szugyi.circlemenu.view.CircleLayout>
+    </com.jwzhangjie.videoplayer.circlemenu.view.CircleLayout>
 
     <TextView
         android:id="@+id/main_selected_textView"

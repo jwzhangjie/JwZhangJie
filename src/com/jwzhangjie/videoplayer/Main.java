@@ -1,11 +1,11 @@
 package com.jwzhangjie.videoplayer;
 
+import com.jwzhangjie.videoplayer.circlemenu.view.CircleImageView;
+import com.jwzhangjie.videoplayer.circlemenu.view.CircleLayout;
+import com.jwzhangjie.videoplayer.circlemenu.view.CircleLayout.OnItemClickListener;
+import com.jwzhangjie.videoplayer.circlemenu.view.CircleLayout.OnItemSelectedListener;
 import com.jwzhangjie.videoplayer.online.WebVideo;
 import com.jwzhangjie.videoplayer.util.AppLog;
-import com.szugyi.circlemenu.view.CircleImageView;
-import com.szugyi.circlemenu.view.CircleLayout;
-import com.szugyi.circlemenu.view.CircleLayout.OnItemClickListener;
-import com.szugyi.circlemenu.view.CircleLayout.OnItemSelectedListener;
 
 import android.app.Activity;
 import android.content.Intent;
