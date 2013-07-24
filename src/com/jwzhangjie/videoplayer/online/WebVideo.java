@@ -4,9 +4,12 @@ import com.jwzhangjie.videoplayer.R;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.webkit.DownloadListener;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -45,6 +48,16 @@ public class WebVideo extends Activity{
 			}
 			
 		});
+		MyWebView.setDownloadListener(new DownloadListener() {
+			
+			@Override
+			public void onDownloadStart(String url, String userAgent,
+					String contentDisposition, String mimetype, long contentLength) {
+				Uri uri = Uri.parse(url);
+				Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+				startActivity(intent);
+			}
+		});
 		MyWebView.loadUrl("http://www.google.hk");
 	}
 	
@@ -69,5 +82,6 @@ public class WebVideo extends Activity{
 		return super.onKeyDown(keyCode, event);
 	}
 
+	
 	private WebView MyWebView;
 }
