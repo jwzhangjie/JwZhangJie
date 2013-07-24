@@ -55,6 +55,16 @@ public class WebVideo extends Activity{
 				MyWebView.goBack();
 				return true;
 			}
+		}else if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
+			if (MyWebView.canGoForward()) {
+				MyWebView.goForward();
+			}
+			return true;
+		}else if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
+			if (MyWebView.canGoBack()) {
+				MyWebView.goBack();
+			}
+			return true;
 		}
 		return super.onKeyDown(keyCode, event);
 	}
